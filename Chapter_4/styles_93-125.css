@@ -1,0 +1,374 @@
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-hover: #1f2733;
+    --primary: #1e88e5;
+    --primary-light: #42a5f5;
+    --primary-light1: #70b9f4;
+    --primary-dark: #1565c0;
+    --accent-blue: #58a6ff;
+    --accent-green: #3e3ed5;
+    --accent-cyan: #56d4dd;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --transition: 0.3s ease;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+header h1 {
+    color: var(--accent-blue);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+.task-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-green);
+    border-radius: var(--radius);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    position: relative;
+}
+
+.task-block:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--accent-blue);
+    box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+    background-color: var(--bg-hover);
+}
+
+.task-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    font-weight: bold;
+    color: var(--primary-light1);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explanation {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+code {
+    background: #0b0f14;
+    border: 1px solid #1f2733;
+    border-radius: 6px;
+    color: #a5d6ff;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+
+#task93_1 {
+    background-color: #808bf4;
+    width: 200px;
+    height: 200px;
+}
+
+#task93_2 {
+    background-color: #4cf199;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#task95 {
+    width: 300px;
+    height: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#task96 {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: red;
+    width: 300px;
+    height: 200px;
+}
+
+#task97 {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(255, 170, 0);
+    width: 300px;
+    height: 200px;
+}
+
+#task99 {
+    border-width: 10px;
+    border-style: double;
+    border-color: blue;
+    width: 300px;
+    height: 200px;
+}
+
+#task100_1 {
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+}
+
+#task100_2 {
+    border: 2px dotted blue;
+    width: 300px;
+    height: 200px;
+}
+
+#task100_3 {
+    border: 3px dashed green;
+    width: 300px;
+    height: 200px;
+}
+
+#task100_4 {
+    border: 5px double orange;
+    width: 300px;
+    height: 200px;
+}
+
+#task101_1 {
+    width: 300px;
+    height: 200px;
+    border-top: 3px solid blue;
+    border-right: 3px solid green;
+    border-left: 3px solid orange;
+    border-bottom: 3px solid red;
+}
+
+#task101_2 {
+    width: 300px;
+    height: 200px;
+    border-top: 1px solid blue;
+    border-right: 3px dotted green;
+    border-bottom: 1px solid blue;
+    border-left: 3px solid red;
+}
+
+#task102 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid green;
+    border-radius: 30px;
+}
+
+#task103 {
+    border-radius: 30px;
+    height: 200px;
+    width: 200px;
+    background-color: #44e18e;
+}
+
+#task104 {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid green;
+}
+
+#task106 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 10px 30px 50px 70px;
+}
+
+#task107 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 10px 30px;
+}
+
+#task108 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 10px 30px 20px;
+}
+
+#task110 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+
+/* Стили для задач 115-125 */
+#task115 ul {
+    list-style-type: square;
+}
+
+#task118 ul {
+    list-style-type: circle;
+}
+
+#task118 ul {
+    list-style-type: none;
+}
+
+#task120 ul {
+    list-style-type: lower-roman;
+}
+
+#task121 ol {
+    list-style-type: upper-roman;
+}
+
+#task122 ol {
+    list-style-type: lower-alpha;
+}
+
+#task123 ol {
+    list-style-type: upper-alpha;
+}
+
+#task124 ol {
+    list-style-type: lower-greek;
+}
+
+#task125 ol {
+    list-style-type: decimal-leading-zero;
+}
+
+/* Стили для задачи 113 */
+#task113 {
+    background-image: url("bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid maroon;
+}
+
+#task113_1 p {
+    color: #161b22;
+}
+
+#task113_1 {
+    width: 564px;
+    height: 317px;
+    border: 3px solid maroon;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 660px 400px;
+    background-attachment: fixed;
+}
+
+
+/* Стили для задач 111-112*/
+.bg-section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #d34b4b;
+}
+
+#task111 {
+    background-image: url(" bg.png");
+    height: 200px;
+}
+
+#task112_1 {
+    background-image: url("bg.png");
+    background-repeat: repeat-y;
+    height: 200px;
+}
+
+#task112_2 {
+    background-image: url("bg.png");
+    background-repeat: repeat-x;
+    height: 200px;
+}

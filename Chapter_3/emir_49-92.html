@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cелекторы</title>
+    <link rel="stylesheet" href="styles_49-92.css">
+</head>
+
+<body>
+    <header>
+        <h1>Селекторы</h1>
+        <p style="color: #8b949e; font-size: 1rem;">Выполнил студент группы И-3-24 <b>Сеит-Велиев Эмир Русланович</b>
+        </p>
+    </header>
+
+
+    <!-- Задание 49_1 -->
+    <h2 class="h2">Tasks 49 Родственные связи тегов в HTML</h2>
+    <h3 class="h3">49_1 Расскажите какие родительские связи вы видите.</h3>
+    <div class="task-block task1">
+        <ul>
+            <li>text <a href="">link</a></li>
+            <li>text <a href="">link</a></li>
+            <li>text <a href="">link</a></li>
+            <li>text <a href=""><b>bold link</b></a></li>
+        </ul>
+        <p class="explanation">Расскажите какие родительские связи вы видите.</p>
+    </div>
+
+    <!-- Задание 49_2 -->
+    <h3 class="h3">49_2 Расскажите какие родительские связи вы видите.</h3>
+    <div class="task-block task2">
+        <table>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 4</td>
+                <td>cell 5</td>
+                <td>cell 6</td>
+            </tr>
+            <tr>
+                <td>cell 7</td>
+                <td>cell 8</td>
+                <td>cell 9</td>
+            </tr>
+        </table>
+        <p class="explanation">Изучите родительские связи между тегами table, tr, td.</p>
+    </div>
+
+    <!-- Задание 49_3 -->
+    <h3 class="h3">49_3 Потомки абзаца</h3>
+    <div class="task-block task3">
+        <p>
+            This is a paragraph with text
+            <i><b>bold italic</b></i>
+            <a href="">link <i>italic</i></a>.
+        </p>
+        <p class="explanation">Какие потомки есть у абзаца? Какие непосредственные потомки есть у абзаца?
+        </p>
+    </div>
+
+    <!-- Задание 49_4 -->
+    <h3 class="h3">49_4 Родители тега b</h3>
+    <div class="task-block task4">
+        <p>
+            <a href="">link <i><b>bold italic</b></i></a>
+        </p>
+        <p class="explanation">Расскажите, какие родители есть у тега b. Кто является его непосредственным родителем?
+        </p>
+    </div>
+
+    <!-- Задание 50_1 -->
+    <h2 class="h2">Task 50 Наследование CSS свойств</h2>
+    <h3 class="h3">50_1</h3>
+    <div class="task-block task5">
+        <p>
+            This is some <i>text</i> in paragraph.
+        </p>
+        <p class="explanation">Какой цвет будет у текста в теге i?</p>
+    </div>
+
+    <!-- Задание 50_2 -->
+    <h3 class="h3">50_2 Приоритет селекторов цвета</h3>
+    <div class="task-block task6">
+        <p>
+            This is some <b>text</b> in paragraph.
+        </p>
+        <p class="explanation">Какой цвет будет у текста в теге b?</p>
+    </div>
+
+    <!-- Задание 7 -->
+    <h3 class="h3">50_3 Порядок объявления стилей</h3>
+    <div class="task-block task7">
+        <p>
+            This is some <b>text</b> in paragraph.
+        </p>
+        <p class="explanation">Какой цвет будет у текста в теге b при изменении порядка объявления стилей?</p>
+    </div>
+
+    <!-- Задание 8 -->
+    <h3 class="h3">50_4 Наследование от ul к li</h3>
+    <div class="task-block">
+        <div class="task8">
+            <ul>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+        <p class="explanation">Какой цвет будет у текста в теге li?</p>
+    </div>
+
+    <!-- Задание 9 -->
+    <h3 class="h3">50_5 Приоритет селектора li над p</h3>
+    <div class="task-block">
+        <div class="task9">
+            <ul>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+        <p class="explanation">Какой цвет будет у текста в теге li?</p>
+    </div>
+
+    <!-- Задание 10 -->
+    <h3 class="h3">50_6 Вложенные селекторы</h3>
+    <div class="task-block">
+        <div class="task10">
+            <ul>
+                <li>text <i>italic</i> text</li>
+                <li>text <i>italic</i> text</li>
+                <li>text <i>italic</i> text</li>
+            </ul>
+        </div>
+        <p class="explanation">Какой цвет будет у текста в теге i?</p>
+    </div>
+
+    <!-- Задание 11 -->
+    <h3 class="h3">50_7 Размер шрифта с приоритетом</h3>
+    <div class="task-block task11">
+        <ul>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+            <li>text <i>italic</i> text</li>
+        </ul>
+        <p class="explanation">Какой размер будет у текста в теге i?</p>
+    </div>
+
+    <!-- Задание 12 -->
+    <h2 class="h2">51 Группировка селекторов в CSS</h2>
+    <div class="task-block task12">
+        <div>
+            <h1>Text</h1>
+            <h1>Text</h1>
+            <h1>Text</h1>
+        </div>
+        <p class="explanation">Все заголовки центрированы с помощью группового селектора.</p>
+    </div>
+
+    <!-- Задание 13 -->
+    <h2 class="h2">Task 52 Общие свойства при группировке селекторов в CSS
+    </h2>
+    <h3>52_1 </h3>
+    <div class="task-block task13">
+        <div>
+            <h1>Text</h1>
+            <h2>Text</h2>
+            <h3>Text</h3>
+        </div>
+        <p class="explanation">Заголовки центрированы, h2 синего цвета, h3 красного цвета с размером 16px.</p>
+    </div>
+
+    <!-- Задание 14 -->
+    <h3 class="h3">52_2</h3>
+    <div class="task-block task14">
+        <div>
+            <h1>Text</h1>
+            <h2>Text</h2>
+            <h3>Text</h3>
+        </div>
+        <p class="explanation">Все заголовки центрированы и красного цвета, h3 имеет размер 16px.</p>
+    </div>
+
+    <!-- Задание 15 -->
+    <h2>Task 53 Селектор потомков в CSS</h2>
+    <h3>53_1</h3>
+    <div class="task-block task15">
+        <div>
+            <ul>
+                <li>text <i>italic</i></li>
+                <li>text <i>italic</i></li>
+                <li>text <i>italic</i></li>
+                <li>text <i>italic</i></li>
+            </ul>
+
+            <p>
+                paragraph text <i>italic</i>
+            </p>
+            <p>
+                paragraph text <i>italic</i>
+            </p>
+        </div>
+        <p class="explanation">Курсив в списках красный, в абзацах - зеленый.</p>
+    </div>
+
+    <!-- Задание 16 -->
+    <h3>53_2</h3>
+    <div class="task-block task16">
+        <div>
+            <p>
+                paragraph text <b><i>bold italic</i></b>
+            </p>
+            <p>
+                paragraph text <i>italic</i>
+            </p>
+        </div>
+        <p class="explanation">Только жирный курсив внутри абзаца будет красным.</p>
+    </div>
+
+    <!-- Задание 17 -->
+    <h2>54 Дочерний селектор</h2>
+    <div class="task-block task17">
+        <div>
+            <ul>
+                <li>
+                    <i>italic</i>
+                    <b>bold</b>
+                    <b><i>bold italic</i></b>
+                </li>
+                <li>
+                    <i>italic</i>
+                    <b>bold</b>
+                    <b><i>bold italic</i></b>
+                </li>
+            </ul>
+        </div>
+        <p class="explanation">Только непосредственные дочерние элементы b к li будут красными.</p>
+    </div>
+
+    <!-- Задание 18 -->
+    <h2>55 Классы для четных и нечетных элементов</h2>
+    <h3>55_1</h3>
+    <div class="task-block task18">
+        <ul>
+            <li class="odd">text</li>
+            <li class="eve">text</li>
+            <li class="odd">text</li>
+            <li class="eve">text</li>
+            <li class="odd">text</li>
+            <li class="eve">text</li>
+        </ul>
+        <p class="explanation">Нечетные элементы красные, четные - зеленые.</p>
+    </div>
+
+    <!-- Задание 19 -->
+    <h2>55_2</h2>
+    <div class="task-block task19">
+        <h2 class="eee">Title</h2>
+        <p class="eee">
+            paragraph
+        </p>
+        <p class="eee">
+            paragraph
+        </p>
+        <p>
+            paragraph without class
+        </p>
+        <ul class="eee">
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <p class="explanation">Элементы с классом eee и их потомки будут красными.</p>
+    </div>
+
+    <!-- Задание 20 -->
+    <h2>Класс для увеличения шрифта</h2>
+    <div class="task-block task20">
+        <p>
+            Lorem ipsum <span class="xxx">dolor sit</span> amet.
+        </p>
+        <p>
+            <span class="xxx">Lorem ipsum</span> dolor sit amet.
+        </p>
+        <p class="explanation">Текст с классом xxx имеет размер 30px.</p>
+    </div>
+
+    <!-- Задание 21 -->
+    <h2>Разные классы для разных цветов</h2>
+    <div class="task-block task21">
+        <div class="qwe">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="rty">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <div class="asd">
+            <h2>Title</h2>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+            <p>
+                text
+            </p>
+        </div>
+        <p class="explanation">Каждый блок имеет свой цвет текста через класс.</p>
+    </div>
+
+
+    <!-- Задание 23 -->
+    <h2>Группировка селекторов классов</h2>
+    <div class="task-block task23">
+        <h2 class="eee">Title</h2>
+        <p class="zzz">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </p>
+        <p class="zzz">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </p>
+        <p class="explanation">Элементы с классами eee и zzz имеют общие свойства и свои уникальные.</p>
+    </div>
+
+    <!-- Задание 24 -->
+    <h2>Группировка трех классов</h2>
+    <div class="task-block task24">
+        <h2 class="eeee">Title</h2>
+        <p class="zzzz">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </p>
+        <p class="ggg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </p>
+        <p class="explanation">Три класса имеют общие свойства и уникальные размеры.</p>
+    </div>
+
+    <!-- Задание 25 -->
+    <h2>Класс header для заголовков</h2>
+    <div class="task-block task25">
+        <h2 class="header">Title h2</h2>
+        <h3 class="header">Title h3</h3>
+        <p class="explanation">Оба заголовка с классом header красные, но разного размера.</p>
+    </div>
+
+    <!-- Задание 26 -->
+    <h2>Вложенный селектор с классом</h2>
+    <div class="task-block task26">
+        <div class="mmm">
+            <p>
+                paragraph <i>italic</i>
+            </p>
+            <p>
+                paragraph <i>italic</i>
+            </p>
+        </div>
+        <p class="explanation">Курсив внутри элемента с классом mmm красный.</p>
+    </div>
+
+    <!-- Задание 27 -->
+    <h2>Двухуровневый вложенный селектор классов</h2>
+    <div class="task-block task27">
+        <div class="aaa">
+            <div class="bbb">
+                text
+            </div>
+        </div>
+        <p class="explanation">Элемент с классом bbb внутри элемента с классом aaa красный.</p>
+    </div>
+
+    <!-- Задание 28 -->
+    <h2>Вложенный селектор с тегом и классом</h2>
+    <div class="task-block task28">
+        <div class="memory">
+            <h2>Memory</h2>
+        </div>
+        <p class="explanation">Заголовок h2 внутри элемента с классом memory красный.</p>
+    </div>
+
+    <!-- Задание 29 -->
+    <h2>Вложенный селектор с двумя классами</h2>
+    <div class="task-block task29">
+        <div class="xxx">
+            <h2 class="yyy">Title</h2>
+        </div>
+        <p class="explanation">Элемент с классом yyy внутри элемента с классом xxx красный.</p>
+    </div>
+
+    <!-- Задание 30 -->
+    <h2>Вложенный селектор с классами на разных уровнях</h2>
+    <div class="task-block task30">
+        <div class="qqq">
+            <h3 class="www">Title</h3>
+        </div>
+        <p class="explanation">Элемент с классом www внутри элемента с классом qqq красный.</p>
+    </div>
+
+    <!-- Задание 31 -->
+    <h2>Вложенный селектор с классами для абзаца</h2>
+    <div class="task-block task31">
+        <div class="ma">
+            <p class="pa">Paragraph</p>
+        </div>
+        <p class="explanation">Абзац с классом pa внутри элемента с классом ma красный.</p>
+    </div>
+
+    <!-- Задание 32 -->
+    <h2>Трехуровневый вложенный селектор классов</h2>
+    <div class="task-block task32">
+        <div class="v">
+            <div class="f">
+                <div class="r">
+                    text
+                </div>
+            </div>
+        </div>
+        <p class="explanation">Элемент с классом r внутри цепочки классов v и f красный.</p>
+    </div>
+
+    <!-- Задание 33 -->
+    <h2>Селектор с несколькими классами</h2>
+    <div class="task-block task33">
+        <p class="barbie">Barbie</p>
+        <p class="barbie pink">Barbie pink</p>
+        <p class="pink barbie">Barbie pink reversed</p>
+        <p class="explanation">Абзацы с классом barbie (и возможно другими) красные.</p>
+    </div>
+
+    <!-- Задание 34 -->
+    <h2>Потомок с классом внутри абзаца</h2>
+    <div class="task-block task34">
+        <p>
+            text <span class="bratz">Bratz</span> text
+        </p>
+        <p class="explanation">Элемент с классом bratz внутри абзаца красный.</p>
+    </div>
+
+    <!-- Задание 35 -->
+    <h2>Вложенный селектор с классами</h2>
+    <div class="task-block task35">
+        <div class="wing">
+            <p class="fei">Fei Wong</p>
+        </div>
+        <p class="explanation">Абзац с классом fei внутри элемента с классом wing красный.</p>
+    </div>
+
+    <!-- Задание 36 -->
+    <h2>Многоуровневый вложенный селектор</h2>
+    <div class="task-block task36">
+        <div class="ny">
+            <p>
+                text <span class="cat">Cat</span> text
+            </p>
+        </div>
+        <p class="explanation">Элемент с классом cat внутри абзаца внутри элемента с классом ny красный.</p>
+    </div>
+
+    <!-- Задание 37 -->
+    <h2>Комбинации классов</h2>
+    <div class="task-block task37">
+        <p class="success large">Success large</p>
+        <p class="success small">Success small</p>
+        <p class="error large">Error large</p>
+        <p class="error small">Error small</p>
+        <p class="explanation">Разные комбинации классов дают разные стили.</p>
+    </div>
+
+    <!-- Задание 38 -->
+    <h2>Множественные классы с наследованием</h2>
+    <div class="task-block task38">
+        <p class="flora fairy">Flora fairy</p>
+        <p class="flora fairy green">Flora fairy green</p>
+        <p class="explanation">Комбинации классов с разными свойствами.</p>
+    </div>
+
+    <!-- Задание 39 -->
+    <h2>Селекторы по id</h2>
+    <div class="task-block task39">
+        <p id="elem1">text 1</p>
+        <p id="elem2">text 2</p>
+        <p id="elem3">text 3</p>
+        <p class="explanation">Каждый элемент имеет уникальный цвет через id.</p>
+    </div>
+
+    <!-- Задание 40 -->
+    <h2>Комбинация id и класса</h2>
+    <div class="task-block task40">
+        <p id="block">text with id</p>
+        <p class="text">text with class</p>
+        <p class="explanation">Элемент с id и элемент с классом имеют разные стили.</p>
+    </div>
+
+    <!-- Задание 41 -->
+    <h2>Вложенный селектор с id</h2>
+    <div class="task-block task41">
+        <div id="elem">
+            <h2>Title</h2>
+        </div>
+        <p class="explanation">Заголовок внутри элемента с id elem имеет специальные стили.</p>
+    </div>
+
+    <!-- Задание 42 -->
+    <h2>Вложенный селектор id и класса</h2>
+    <div class="task-block task42">
+        <div id="elem2">
+            <p class="text2">Text</p>
+        </div>
+        <p class="explanation">Элемент с классом text2 внутри элемента с id elem2 имеет зеленый цвет.</p>
+    </div>
+
+    <!-- Задание 43 -->
+    <h2>Вложенный селектор с id, тегом и классом</h2>
+    <div class="task-block task43">
+        <div id="elem3">
+            <p class="text3">Text</p>
+        </div>
+        <p class="explanation">Абзац с классом text3 внутри элемента с id elem3 оранжевый.</p>
+    </div>
+
+    <!-- Задание 44 -->
+    <h2>Вложенный селектор для списка</h2>
+    <div class="task-block task44">
+        <ul id="elem4">
+            <li class="text4">item</li>
+            <li class="text4">item</li>
+            <li class="text4">item</li>
+        </ul>
+        <p class="explanation">Элементы списка с классом text4 внутри ul с id elem4 бирюзовые.</p>
+    </div>
+
+    <!-- Задание 45 -->
+    <h2>Селектор с тремя классами</h2>
+    <div class="task-block task45">
+        <p class="eee zzz ccc">Text with three classes</p>
+        <p class="explanation">Элемент должен иметь все три класса для применения стиля.</p>
+    </div>
+
+    <!-- Задание 46 -->
+    <h2>Селектор с двумя классами</h2>
+    <div class="task-block task46">
+        <p class="bbb zzz">Text with bbb and zzz</p>
+        <p class="bbb">Text with only bbb</p>
+        <p class="explanation">Только элемент с обоими классами будет красным.</p>
+    </div>
+
+    <!-- Задание 47 -->
+    <h2>Селектор для заголовка с двумя классами</h2>
+    <div class="task-block task47">
+        <h2 class="aaa sss">Title with aaa and sss</h2>
+        <h2 class="aaa">Title with only aaa</h2>
+        <p class="explanation">Только заголовок с обоими классами красный.</p>
+    </div>
+
+    <!-- Задание 48 -->
+    <h2>Комбинация id и класса</h2>
+    <div class="task-block task48">
+        <p id="elem" class="xxx">Text with id and class</p>
+        <p class="xxx">Text with only class</p>
+        <p class="explanation">Только элемент с id и классом красный.</p>
+    </div>
+
+    <!-- Задание 49 -->
+    <h2>Комбинация id и двух классов</h2>
+    <div class="task-block task49">
+        <p id="elem1" class="uuu iii">Text with id and two classes</p>
+        <p class="uuu iii">Text with only two classes</p>
+        <p class="explanation">Только элемент с id и двумя классами красный.</p>
+    </div>
+
+    <!-- Задание 50 -->
+    <h2>Комбинация id, тега и класса</h2>
+    <div class="task-block task50">
+        <h2 id="elem2" class="ccc">Title with id and class</h2>
+        <p id="elem2" class="ccc">Paragraph with same id and class</p>
+        <p class="explanation">Только заголовок h2 с id и классом красный.</p>
+    </div>
+
+    <!-- Задание 51 -->
+    <h2>Селектор по классу для заголовка</h2>
+    <div class="task-block task51">
+        <h2 class="kino">Cinema</h2>
+        <p class="explanation">Заголовок с классом kino красный.</p>
+    </div>
+
+    <!-- Задание 52 -->
+    <h2>Потомок с классом внутри заголовка</h2>
+    <div class="task-block task52">
+        <h2>
+            <span class="titanic">Titanic</span>
+        </h2>
+        <p class="explanation">Элемент с классом titanic внутри заголовка красный.</p>
+    </div>
+
+    <!-- Задание 53 -->
+    <h2>Селектор с пробелом в имени класса</h2>
+    <div class="task-block task53">
+        <p class="fight club">Fight Club</p>
+        <p class="explanation">Элемент с двумя классами (fight и club) красный.</p>
+    </div>
+
+    <!-- Задание 54 -->
+    <h2>Вложенный селектор с классами</h2>
+    <div class="task-block task54">
+        <div class="movie">
+            <p class="cam">Camera</p>
+        </div>
+        <p class="explanation">Элемент с классом cam внутри элемента с классом movie красный.</p>
+    </div>
+
+    <!-- Задание 55 -->
+    <h2>Селектор с тремя классами</h2>
+    <div class="task-block task55">
+        <p class="ddd fff ggg">Text with three classes</p>
+        <p class="explanation">Элемент должен иметь все три класса для применения стиля.</p>
+    </div>
+
+    <!-- Задание 56 -->
+    <h2>Многоуровневый вложенный селектор</h2>
+    <div class="task-block task56">
+        <div class="leon">
+            <p class="fav jjj">Leon favorite</p>
+        </div>
+        <p class="explanation">Элемент с двумя классами внутри элемента с классом leon красный.</p>
+    </div>
+
+    <!-- Задание 57 -->
+    <h2>Сложный вложенный селектор</h2>
+    <div class="task-block task57">
+        <div class="rrr ttt">
+            <p class="yyy">Text</p>
+        </div>
+        <p class="explanation">Элемент с классом yyy внутри элемента с двумя классами красный.</p>
+    </div>
+
+    <!-- Задание 58 -->
+    <h2>Трехуровневый вложенный селектор</h2>
+    <div class="task-block task58">
+        <div class="kk">
+            <div class="kl">
+                <div class="ki">
+                    text
+                </div>
+            </div>
+        </div>
+        <p class="explanation">Элемент с классом ki внутри цепочки классов красный.</p>
+    </div>
+
+    <!-- Задание 59 -->
+    <h2>Комбинация id и класса</h2>
+    <div class="task-block task59">
+        <p id="star" class="joli">Angelina Joli</p>
+        <p class="explanation">Элемент с id star и классом joli красный.</p>
+    </div>
+
+    <!-- Задание 60 -->
+    <h2>Вложенный селектор с id и классом</h2>
+    <div class="task-block task60">
+        <div id="elem10">
+            <p class="t10">Text</p>
+        </div>
+        <p class="explanation">Элемент с классом t10 внутри элемента с id elem10 красный.</p>
+    </div>
+
+    <!-- Задание 61 -->
+    <h2>Групповой селектор с id</h2>
+    <div class="task-block task61">
+        <div id="block70_1">
+            <h1>Title h1</h1>
+            <h2>Title h2</h2>
+        </div>
+        <p class="explanation">Заголовки h1 и h2 внутри элемента с id block70_1 центрированы.</p>
+    </div>
+
+    <!-- Задание 62 -->
+    <h2>Групповой селектор с разными стилями</h2>
+    <div class="task-block task62">
+        <div id="block70_2">
+            <h1>Title h1</h1>
+            <h2>Title h2</h2>
+        </div>
+        <p class="explanation">Оба заголовка центрированы, но имеют разные размеры.</p>
+    </div>
+
+    <!-- Задание 63 -->
+    <h2>Сложный групповой селектор</h2>
+    <div class="task-block task63">
+        <div id="block1">
+            <h1>Title h1</h1>
+            <h2>Title h2</h2>
+            <h3>Title h3</h3>
+        </div>
+        <p class="explanation">Все заголовки центрированы, h2 синий, h3 красный с размером 16px.</p>
+    </div>
+
+    <!-- Задание 64 -->
+    <h2>Групповой селектор с классами</h2>
+    <div class="task-block task64">
+        <div id="block2">
+            <h1 class="eee">Title h1</h1>
+            <h2 class="zzz">Title h2</h2>
+        </div>
+        <p class="explanation">Заголовки с классами eee и zzz центрированы с разными размерами.</p>
+    </div>
+
+    <!-- Задание 65 -->
+    <h2>Сложный групповой селектор</h2>
+    <div class="task-block task65">
+        <div class="xxx">
+            <h2 class="kkk">Title</h2>
+        </div>
+        <div class="eee3">
+            <h2 class="zzz3">Title</h2>
+        </div>
+        <div id="eee3">
+            <h2>Title</h2>
+        </div>
+        <p class="explanation">Разные комбинации селекторов приводят к центрированию.</p>
+    </div>
+
+    <!-- Задание 66 -->
+    <h2>Групповой селектор с разной специфичностью</h2>
+    <div class="task-block task66">
+        <div class="eee4">
+            <h2 class="zzz4">Title</h2>
+        </div>
+        <div class="xxx4">Text</div>
+        <p class="explanation">Разные селекторы с общим свойством центрирования.</p>
+    </div>
+
+    <!-- Задание 67 -->
+    <h2>Вложенный селектор с классом</h2>
+    <div class="task-block task67">
+        <div class="task1">
+            <p>Paragraph in task1</p>
+        </div>
+        <p class="explanation">Абзац внутри элемента с классом task1 красный.</p>
+    </div>
+
+    <!-- Задание 68 -->
+    <h2>Вложенный селектор для заголовка</h2>
+    <div class="task-block task68">
+        <div class="task2">
+            <h2>Title in task2</h2>
+        </div>
+        <p class="explanation">Заголовок h2 внутри элемента с классом task2 фиолетовый.</p>
+    </div>
+
+    <!-- Задание 69 -->
+    <h2>Вложенный селектор с id</h2>
+    <div class="task-block task69">
+        <div id="block3">
+            <p>Paragraph in block3</p>
+        </div>
+        <p class="explanation">Абзац внутри элемента с id block3 зеленый.</p>
+    </div>
+
+    <!-- Задание 70 -->
+    <h2>Вложенный селектор с id для заголовка</h2>
+    <div class="task-block task70">
+        <div id="block4">
+            <h2>Title in block4</h2>
+        </div>
+        <p class="explanation">Заголовок h2 внутри элемента с id block4 желтый.</p>
+    </div>
+
+    <!-- Задание 71 -->
+    <h2>Селектор по классу</h2>
+    <div class="task-block task71">
+        <p class="bbb5">Text with class bbb5</p>
+        <p class="explanation">Элемент с классом bbb5 красный.</p>
+    </div>
+
+    <!-- Задание 72 -->
+    <h2>Вложенный селектор с id и классом</h2>
+    <div class="task-block task72">
+        <div id="block6">
+            <p class="bbb6">Text in block6 with class bbb6</p>
+        </div>
+        <p class="explanation">Элемент с классом bbb6 внутри элемента с id block6 фуксиновый.</p>
+    </div>
+
+    <!-- Задание 73 -->
+    <h2>Селектор тега с классом</h2>
+    <div class="task-block task73">
+        <p class="bbb7">Paragraph with class bbb7</p>
+        <div class="bbb7">Div with class bbb7</div>
+        <p class="explanation">Только абзац с классом bbb7 темно-красный.</p>
+    </div>
+
+    <!-- Задание 74 -->
+    <h2>Селектор заголовка с классом</h2>
+    <div class="task-block task74">
+        <h2 class="bbb8">Title with class bbb8</h2>
+        <p class="bbb8">Paragraph with class bbb8</p>
+        <p class="explanation">Только заголовок h2 с классом bbb8 сине-фиолетовый.</p>
+    </div>
+
+    <!-- Задание 75 -->
+    <h2>Сложный вложенный селектор</h2>
+    <div class="task-block task75">
+        <div id="block9">
+            <p class="bbb9">Paragraph in block9 with class bbb9</p>
+        </div>
+        <p class="explanation">Абзац с классом bbb9 внутри элемента с id block9 розовый.</p>
+    </div>
+
+    <!-- Задание 76 -->
+    <h2>Групповой селектор классов</h2>
+    <div class="task-block task76">
+        <p class="bbb10">Text with class bbb10</p>
+        <p class="xxx10">Text with class xxx10</p>
+        <p class="explanation">Оба класса bbb10 и xxx10 имеют фиолетовый цвет.</p>
+    </div>
+
+    <!-- Задание 77 -->
+    <h2>Групповой селектор тегов с классами</h2>
+    <div class="task-block task77">
+        <p class="bbb11">Paragraph with class bbb11</p>
+        <h2 class="xxx11">Title with class xxx11</h2>
+        <p class="explanation">Абзац с классом bbb11 и заголовок с классом xxx11 синие.</p>
+    </div>
+
+    <!-- Задание 78 -->
+    <h2>Групповой селектор с одинаковым контекстом</h2>
+    <div class="task-block task78">
+        <div id="block12">
+            <p class="bbb12">Paragraph with class bbb12</p>
+            <p class="xxx12">Paragraph with class xxx12</p>
+        </div>
+        <p class="explanation">Абзацы с классами bbb12 и xxx12 внутри элемента с id block12 красные.</p>
+    </div>
+
+    <!-- Задание 79 -->
+    <h2>Селектор по классу</h2>
+    <div class="task-block task79">
+        <p class="fff13">Text with class fff13</p>
+        <p class="explanation">Элемент с классом fff13 розовый.</p>
+    </div>
+
+    <!-- Задание 80 -->
+    <h2>Вложенный селектор класса</h2>
+    <div class="task-block task80">
+        <div class="fff14">
+            <p>Paragraph in fff14</p>
+        </div>
+        <p class="explanation">Абзац внутри элемента с классом fff14 красный.</p>
+    </div>
+
+    <!-- Задание 81 -->
+    <h2>Селектор тега с классом</h2>
+    <div class="task-block task81">
+        <p class="fff15">Paragraph with class fff15</p>
+        <div class="fff15">Div with class fff15</div>
+        <p class="explanation">Только абзац с классом fff15 зеленый.</p>
+    </div>
+
+    <!-- Задание 82 -->
+    <h2>Вложенный селектор двух классов</h2>
+    <div class="task-block task82">
+        <div class="fff16">
+            <p class="bbb16">Paragraph with class bbb16 in fff16</p>
+        </div>
+        <p class="explanation">Элемент с классом bbb16 внутри элемента с классом fff16 малиновый.</p>
+    </div>
+
+    <!-- Задание 83 -->
+    <h2>Сложный вложенный селектор</h2>
+    <div class="task-block task83">
+        <div class="fff17">
+            <h2 class="bbb17">Title with class bbb17 in fff17</h2>
+        </div>
+        <p class="explanation">Заголовок с классом bbb17 внутри элемента с классом fff17 оранжево-красный.</p>
+    </div>
+
+    <!-- Задание 84 -->
+    <h2>Приоритет одинаковых селекторов</h2>
+    <div class="task-block task84">
+        <p>Text with conflicting styles</p>
+        <p class="explanation">Применяется последний объявленный стиль (30px).</p>
+    </div>
+
+    <!-- Задание 85 -->
+    <h2>Приоритет при конфликте свойств</h2>
+    <div class="task-block task85">
+        <p>Text with color conflict</p>
+        <p class="explanation">Применяется последний объявленный цвет (red), но оба свойства font-size и font-style.</p>
+    </div>
+
+    <!-- Задание 86 -->
+    <h2>Соседний селектор (+)</h2>
+    <div class="task-block task86">
+        <ul>
+            <li id="elem1">item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <p class="explanation">Следующий элемент после элемента с id elem1 красный.</p>
+    </div>
+
+    <!-- Задание 87 -->
+    <h2>Соседний селектор с классом</h2>
+    <div class="task-block task87">
+        <ul>
+            <li class="elem2">item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <p class="explanation">Следующий элемент после элемента с классом elem2 красный.</p>
+    </div>
+
+    <!-- Задание 88 -->
+    <h2>Последующий селектор (~)</h2>
+    <div class="task-block task88">
+        <ul>
+            <li id="elem78">item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <p class="explanation">Все последующие элементы после элемента с id elem78 красные.</p>
+    </div>
+
+    <!-- Задание 89 -->
+    <h2>Универсальный селектор (*)</h2>
+    <div class="task-block task89">
+        <main>
+            <section>
+                <p>Paragraph in section</p>
+            </section>
+            <p>Direct paragraph in main</p>
+        </main>
+        <p class="explanation">Все абзацы внутри элемента main красные.</p>
+    </div>
+
+    <!-- Задание 90 -->
+    <h2>Селектор по атрибуту [title]</h2>
+    <div class="task-block task90">
+        <p title="hello">Paragraph with title</p>
+        <p>Paragraph without title</p>
+        <a href="#" title="world">Link with title</a>
+        <p class="explanation">Элементы с атрибутом title фиолетовые.</p>
+    </div>
+
+    <!-- Задание 91 -->
+    <h2>Селектор по атрибуту тега [title]</h2>
+    <div class="task-block task91">
+        <p title1="hello">Paragraph with title1</p>
+        <p>Paragraph without title1</p>
+        <a href="#" title1="world">Link with title1</a>
+        <p class="explanation">Только абзацы с атрибутом title1 синие и курсивные.</p>
+    </div>
+
+    <!-- Задание 92 -->
+    <h2>Селектор по точному значению атрибута [title="hello"]</h2>
+    <div class="task-block task92">
+        <p title3="hello">Paragraph with title3="hello"</p>
+        <p title3="world">Paragraph with title3="world"</p>
+        <p>Paragraph without title3</p>
+        <p class="explanation">Только элемент с точным значением атрибута "hello" коричневый и жирный.</p>
+    </div>
+
+    <!-- Задание 93 -->
+    <h2>Селектор по началу значения атрибута [href^="http://"]</h2>
+    <div class="task-block task93">
+        <a href="http://example.com">External link</a>
+        <a href="https://example.com">Secure link</a>
+        <a href="page.html">Internal link</a>
+        <p class="explanation">Только ссылки, начинающиеся с "http://", розовые и центрированные.</p>
+    </div>
+
+    <!-- Задание 94 -->
+    <h2>Селектор по окончанию значения атрибута [href$=".html"]</h2>
+    <div class="task-block task94">
+        <a href="page.html">HTML page</a>
+        <a href="document.pdf">PDF document</a>
+        <a href="image.jpg">JPG image</a>
+        <p class="explanation">Только ссылки, оканчивающиеся на ".html", оранжевые.</p>
+    </div>
+
+    <!-- Задание 95 -->
+    <h2>Селектор по содержанию значения атрибута [title*="hello"]</h2>
+    <div class="task-block task95">
+        <p title4="hello world">Paragraph with "hello"</p>
+        <p title4="world">Paragraph without "hello"</p>
+        <p title4="helloworld">Paragraph with "hello" concatenated</p>
+        <p class="explanation">Элементы, содержащие "hello" в значении атрибута title4, курсивные и 20px.</p>
+    </div>
+
+    <!-- Задание 96 -->
+    <h2>Селектор по началу значения атрибута класса [class^="top-"]</h2>
+    <div class="task-block task96">
+        <p class="top-header">Top header</p>
+        <p class="top-footer">Top footer</p>
+        <p class="header-top">Header top</p>
+        <p class="explanation">Элементы, класс которых начинается с "top-", зеленые и 20px.</p>
+    </div>
+
+    <!-- Задание 97 -->
+    <h2>Псевдоклассы ссылок (:link, :visited, :hover, :active)</h2>
+    <div class="task-block task97">
+        <a href="#" class="task82">Link with states</a>
+        <p class="explanation">Ссылка меняет цвет в разных состояниях.</p>
+    </div>
+
+    <!-- Задание 98 -->
+    <h2>Псевдоклассы :hover</h2>
+    <div class="task-block task98">
+        <a href="#" class="task84">Link with hover effect</a>
+        <p class="explanation">Ссылка синяя, при наведении становится красной с подчеркиванием.</p>
+    </div>
+
+    <!-- Задание 99 -->
+    <h2>Псевдокласс :hover для отмены подчеркивания</h2>
+    <div class="task-block task99">
+        <div id="task85">
+            <a href="#">Link with hover effect</a>
+        </div>
+        <p class="explanation">Ссылка красная, при наведении убирается подчеркивание.</p>
+    </div>
+
+    <!-- Задание 100 -->
+    <h2>Псевдокласс :hover для класса</h2>
+    <div class="task-block task100">
+        <a href="#" class="link100">Наведи на меня</a>
+    </div>
+
+    <!-- Задание 101 -->
+    <h2>Псевдокласс :active</h2>
+    <div class="task-block task101">
+        <button class="btn101">Нажми и удерживай</button>
+    </div>
+
+    <!-- Задание 102 -->
+    <h2>Псевдокласс :focus</h2>
+    <div class="task-block task102">
+        <input type="text" class="input102" placeholder="Кликни сюда">
+    </div>
+
+    <!-- Задание 103 -->
+    <h2>Псевдокласс :first-child</h2>
+    <div class="task-block task103">
+        <ul>
+            <li>Первый элемент</li>
+            <li>Второй элемент</li>
+            <li>Третий элемент</li>
+        </ul>
+    </div>
+
+    <!-- Задание 104 -->
+    <h2>Псевдокласс :last-child</h2>
+    <div class="task-block task104">
+        <ul>
+            <li>Первый элемент</li>
+            <li>Второй элемент</li>
+            <li>Последний элемент</li>
+        </ul>
+    </div>
+
+    <!-- Задание 105 -->
+    <h2>Псевдокласс :nth-child()</h2>
+    <div class="task-block task105">
+        <ul>
+            <li>Элемент 1</li>
+            <li>Элемент 2</li>
+            <li>Элемент 3</li>
+            <li>Элемент 4</li>
+            <li>Элемент 5</li>
+        </ul>
+    </div>
+
+    <!-- Задание 106 -->
+    <h2>Псевдокласс :nth-of-type()</h2>
+    <div class="task-block task106">
+        <div class="item">Div 1</div>
+        <p>Paragraph 1</p>
+        <div class="item">Div 2</div>
+        <p>Paragraph 2</p>
+        <div class="item">Div 3</div>
+    </div>
+
+    <!-- Задание 107 -->
+    <h2>Псевдокласс :not()</h2>
+    <div class="task-block task107">
+        <p class="simple">Обычный параграф</p>
+        <p class="special">Особый параграф</p>
+        <p class="simple">Еще обычный параграф</p>
+    </div>
+
+    <!-- Задание 108 -->
+    <h2>Псевдокласс :empty</h2>
+    <div class="task-block task108">
+        <div class="box"></div>
+        <div class="box">Содержимое</div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Задание 109 -->
+    <h2>Псевдокласс :checked</h2>
+    <div class="task-block task109">
+        <input type="checkbox" id="check1">
+        <label for="check1">Чекбокс 1</label>
+
+        <input type="checkbox" id="check2" checked>
+        <label for="check2">Чекбокс 2</label>
+    </div>
+
+    <!-- Задание 110 -->
+    <h2>Псевдокласс :disabled</h2>
+    <div class="task-block task110">
+        <input type="text" placeholder="Активное поле">
+        <input type="text" disabled placeholder="Неактивное поле">
+        <button>Активная кнопка</button>
+        <button disabled>Неактивная кнопка</button>
+    </div>
+    <footer>
+        <p>По учебнику Трепачёва Дмитрия © 2012-2025. <a href="https://code.mu/ru/markup/book/prime/">Вёрстка: Основной
+                учебник</a></p>
+    </footer>
+</body>
+
+</html>

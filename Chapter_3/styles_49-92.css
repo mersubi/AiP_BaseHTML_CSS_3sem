@@ -1,0 +1,1039 @@
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-hover: #1f2733;
+    --primary: #1e88e5;
+    --primary-light: #42a5f5;
+    --primary-light1: #70b9f4;
+    --primary-dark: #1565c0;
+    --accent-blue: #58a6ff;
+    --accent-green: #3e3ed5;
+    --accent-cyan: #56d4dd;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --transition: 0.3s ease;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+header h1 {
+    color: var(--accent-blue);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+.task-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-green);
+    border-radius: var(--radius);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    position: relative;
+}
+
+.task-block:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--accent-blue);
+    box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+    background-color: var(--bg-hover);
+}
+
+.task-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.h2 {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.h3 {
+    font-weight: bold;
+    color: var(--primary-light1);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explanation {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+code {
+    background: #0b0f14;
+    border: 1px solid #1f2733;
+    border-radius: 6px;
+    color: #a5d6ff;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+
+/* 49-1 */
+.task1 ul {
+    color: blue;
+}
+
+.task1 li {
+    color: green;
+}
+
+.task1 a {
+    color: orange;
+}
+
+.task1 b {
+    color: red;
+}
+
+/* 49-2 */
+.task2 table {
+    border-collapse: collapse;
+}
+
+.task2 td {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+/* 49-3 */
+.task3 p {
+    color: rgb(243, 243, 247);
+}
+
+.task3 i {
+    color: rgb(243, 243, 247);
+}
+
+.task3 b {
+    color: rgb(243, 243, 247);
+}
+
+.task3 a {
+    color: rgb(243, 243, 247);
+}
+
+/* Задание 4 (бывшее 49-4) */
+.task4 a {
+    color: rgb(243, 243, 247);
+}
+
+.task4 i {
+    color: rgb(243, 243, 247);
+}
+
+.task4 b {
+    color: rgb(243, 243, 247);
+}
+
+/* 50-1 */
+.task5 p {
+    color: blue;
+}
+
+/* Наследует от p */
+
+/* бывшее 50-2 */
+.task6 p {
+    color: blue;
+}
+
+.task6 b {
+    color: red;
+}
+
+/* Задание 7 (бывшее 50-3) */
+.task7 b {
+    color: red;
+}
+
+.task7 p {
+    color: blue;
+}
+
+
+/* Задание 8 (бывшее 50-4) */
+.task8 ul {
+    color: blue;
+}
+
+.task8 li {
+    color: blue;
+}
+
+/* Наследует от ul */
+
+/* Задание 9 (бывшее 50-5) */
+.task9 p {
+    color: blue;
+}
+
+.task9 li {
+    color: red;
+}
+
+/* Задание 10 (бывшее 50-6) */
+.task10 p {
+    color: blue;
+}
+
+.task10 li {
+    color: red;
+}
+
+.task10 i {
+    color: green;
+}
+
+/* Задание 11 (бывшее 50-7) */
+.task11 i {
+    font-size: 30px;
+}
+
+.task11 ul {
+    font-size: 20px;
+}
+
+.task11 li {
+    color: red;
+    font-weight: bold;
+}
+
+/* Задание 12 (бывшее 51-1) */
+.task12 h1,
+.task12 h2,
+.task12 h3 {
+    text-align: center;
+}
+
+/* Задание 13 (бывшее 52-1) */
+.task13 h1,
+.task13 h2,
+.task13 h3 {
+    text-align: center;
+}
+
+.task13 h2 {
+    color: blue;
+}
+
+.task13 h3 {
+    font-size: 16px;
+    color: red;
+}
+
+
+
+/* Задание 14 (бывшее 52-2) */
+.task14 h1,
+.task14 h2,
+.task14 h3 {
+    text-align: center;
+    color: red;
+}
+
+.task14 h3 {
+    font-size: 16px;
+}
+
+/* Задание 15 (бывшее 53-1) */
+.task15 ul i {
+    color: red;
+}
+
+.task15 p i {
+    color: green;
+}
+
+/* Задание 16 (бывшее 53-2) */
+.task16 p b i {
+    color: red;
+}
+
+/* Задание 17 (бывшее 54-1) */
+.task17 li>b {
+    color: red;
+}
+
+/* Задание 18 (бывшее 55-1) */
+.task18 .odd {
+    color: red;
+}
+
+.task18 .eve {
+    color: green;
+}
+
+/* Задание 19 (бывшее 55-2) */
+.task19 .eee {
+    color: red;
+}
+
+/* Задание 20 (бывшее 56-1) */
+.task20 .xxx {
+    font-size: 30px;
+}
+
+/* Задание 21 (бывшее 57-1) */
+.task21 .qwe {
+    color: red;
+}
+
+.task21 .rty {
+    color: green;
+}
+
+.task21 .asd {
+    color: blue;
+}
+
+
+/* Задание 23 (бывшее 58-1) */
+.task23 .eee {
+    font-size: 20px;
+}
+
+.task23 .zzz {
+    font-size: 30px;
+}
+
+.task23 .eee,
+.task23 .zzz {
+    line-height: 1.5;
+    font-family: Arial;
+}
+
+/* Задание 24 (бывшее 58-2) */
+.task24 .eeee {
+    font-size: 20px;
+}
+
+.task24 .zzzz {
+    font-size: 30px;
+}
+
+.task24 .ggg {
+    font-size: 35px;
+}
+
+.task24 .eeee,
+.task24 .zzzz,
+.task24 .ggg {
+    text-align: center;
+    font-family: Arial;
+}
+
+/* Задание 25 (бывшее 59-1) */
+.task25 h2.header {
+    color: red;
+    font-size: 40px;
+}
+
+.task25 h3.header {
+    color: red;
+    font-size: 30px;
+}
+
+/* Задание 26 (бывшее 60-1) */
+.task26 .mmm i {
+    color: red;
+}
+
+/* Задание 27 (бывшее 61-1) */
+.task27 .aaa .bbb {
+    color: red;
+}
+
+/* Задание 28 (бывшее 61-2) */
+.task28 .memory h2 {
+    color: red;
+}
+
+/* Задание 29 (бывшее 61-3) */
+.task29 .xxx h2.yyy {
+    color: red;
+}
+
+/* Задание 30 (бывшее 61-4) */
+.task30 .qqq h3.www {
+    color: red;
+}
+
+/* Задание 31 (бывшее 61-5) */
+.task31 .ma p.pa {
+    color: red;
+}
+
+/* Задание 32 (бывшее 61-6) */
+.task32 .v .f .r {
+    color: red;
+}
+
+/* Задание 33 (бывшее 62-1) */
+.task33 p.barbie {
+    color: red;
+}
+
+/* Задание 34 (бывшее 62-2) */
+.task34 p .bratz {
+    color: red;
+}
+
+/* Задание 35 (бывшее 62-3) */
+.task35 .wing p.fei {
+    color: red;
+}
+
+/* Задание 36 (бывшее 62-4) */
+.task36 .ny p .cat {
+    color: red;
+}
+
+/* Задание 37 (бывшее 63-1) */
+.task37 .success {
+    color: green;
+}
+
+.task37 .error {
+    color: red;
+}
+
+.task37 .large {
+    font-size: 30px;
+}
+
+.task37 .small {
+    font-size: 20px;
+}
+
+/* Задание 38 (бывшее 63-2) */
+.task38 .flora {
+    color: green;
+}
+
+.task38 .fairy {
+    font-family: Georgia;
+}
+
+.task38 .green {
+    font-size: 30px;
+}
+
+/* Задание 39 (бывшее 64-1) */
+.task39 #elem1 {
+    color: red;
+}
+
+.task39 #elem2 {
+    color: green;
+}
+
+.task39 #elem3 {
+    color: blue;
+}
+
+/* Задание 40 (бывшее 65-1) */
+.task40 #block {
+    color: rgb(245, 110, 132);
+    font-family: Arial;
+}
+
+.task40 .text {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+/* Задание 41 (бывшее 66-1) */
+.task41 #elem h2 {
+    color: rgb(237, 33, 118);
+    font: italic 20px Arial;
+}
+
+/* Задание 42 (бывшее 66-2) */
+.task42 #elem2 .text2 {
+    color: rgb(36, 155, 34);
+    font-size: 30px;
+}
+
+/* Задание 43 (бывшее 66-3) */
+.task43 #elem3 p.text3 {
+    font-size: 30px;
+    color: rgb(255, 149, 28);
+}
+
+/* Задание 44 (бывшее 66-4) */
+.task44 #elem4 li.text4 {
+    color: lightseagreen;
+    font-size: 30px;
+}
+
+/* Задание 45 (бывшее 67-1) */
+.task45 .eee.zzz.ccc {
+    color: orangered;
+    font-style: italic;
+}
+
+/* Задание 46 (бывшее 68-1) */
+.task46 .bbb.zzz {
+    color: red;
+}
+
+/* Задание 47 (бывшее 68-2) */
+.task47 h2.aaa.sss {
+    color: red;
+}
+
+/* Задание 48 (бывшее 68-3) */
+.task48 #elem.xxx {
+    color: red;
+}
+
+/* Задание 49 (бывшее 68-4) */
+.task49 #elem1.uuu.iii {
+    color: red;
+}
+
+/* Задание 50 (бывшее 68-5) */
+.task50 h2#elem2.ccc {
+    color: red;
+}
+
+/* Задание 51 (бывшее 69-1) */
+.task51 h2.kino {
+    color: red;
+}
+
+/* Задание 52 (бывшее 69-2) */
+.task52 h2 .titanic {
+    color: red;
+}
+
+/* Задание 53 (бывшее 69-3) */
+.task53 .fight.club {
+    color: red;
+}
+
+/* Задание 54 (бывшее 69-4) */
+.task54 .movie .cam {
+    color: red;
+}
+
+/* Задание 55 (бывшее 69-5) */
+.task55 .ddd.fff.ggg {
+    color: red;
+}
+
+/* Задание 56 (бывшее 69-6) */
+.task56 .leon .fav.jjj {
+    color: red;
+}
+
+/* Задание 57 (бывшее 69-7) */
+.task57 .rrr.ttt .yyy {
+    color: red;
+}
+
+/* Задание 58 (бывшее 69-8) */
+.task58 .kk .kl .ki {
+    color: red;
+}
+
+/* Задание 59 (бывшее 69-9) */
+.task59 #star.joli {
+    color: red;
+}
+
+/* Задание 60 (бывшее 69-10) */
+.task60 #elem10 .t10 {
+    color: red;
+}
+
+/* Задание 61 (бывшее 70-1) */
+.task61 #block70_1 h1,
+#block70_1 h2 {
+    text-align: center;
+}
+
+/* Задание 62 (бывшее 70-2) */
+.task62 #block70_2 h1,
+#block70_2 h2 {
+    text-align: center;
+}
+
+.task62 #block70_2 h1 {
+    font-size: 30px;
+}
+
+.task62 #block70_2 h2 {
+    font-size: 20px;
+}
+
+/* Задание 63 (бывшее 71-1) */
+.task63 #block1 h1,
+#block1 h2,
+#block1 h3 {
+    text-align: center;
+}
+
+.task63 #block1 h2 {
+    color: blue;
+}
+
+.task63 #block1 h3 {
+    font-size: 16px;
+    color: red;
+}
+
+/* Задание 64 (бывшее 71-2) */
+.task64 #block2 h1.eee,
+#block2 h2.zzz {
+    text-align: center;
+}
+
+.task64 #block2 h1.eee {
+    font-size: 30px;
+}
+
+.task64 #block2 h2.zzz {
+    font-size: 20px;
+}
+
+/* Задание 65 (бывшее 71-3) */
+.task65 .xxx .kkk,
+.eee3 h2.zzz3,
+#eee3 h2 {
+    text-align: center;
+}
+
+/* Задание 66 (бывшее 71-4) */
+.task66 .eee4 h2.zzz4,
+.xxx4 {
+    text-align: center;
+}
+
+/* Задание 67 (бывшее 72-1) */
+.task67 .task1 p {
+    color: red;
+}
+
+/* Задание 68 (бывшее 72-2) */
+.task68 .task2 h2 {
+    color: blueviolet;
+}
+
+/* Задание 69 (бывшее 72-3) */
+.task69 #block3 p {
+    color: green;
+}
+
+/* Задание 70 (бывшее 72-4) */
+.task70 #block4 h2 {
+    color: yellow;
+}
+
+/* Задание 71 (бывшее 72-5) */
+.task71 .bbb5 {
+    color: red;
+}
+
+/* Задание 72 (бывшее 72-6) */
+.task72 #block6 .bbb6 {
+    color: fuchsia;
+}
+
+/* Задание 73 (бывшее 72-7) */
+.task73 p.bbb7 {
+    color: darkred;
+}
+
+/* Задание 74 (бывшее 72-8) */
+.task74 h2.bbb8 {
+    color: rgb(102, 75, 255);
+}
+
+/* Задание 75 (бывшее 72-9) */
+.task75 #block9 p.bbb9 {
+    color: hotpink;
+}
+
+/* Задание 76 (бывшее 72-10) */
+.task76 .bbb10,
+.xxx10 {
+    color: mediumorchid;
+}
+
+/* Задание 77 (бывшее 72-11) */
+.task77 p.bbb11,
+h2.xxx11 {
+    color: blue;
+}
+
+/* Задание 78 (бывшее 72-12) */
+.task78 #block12 p.bbb12,
+#block12 p.xxx12 {
+    color: red;
+}
+
+/* Задание 79 (бывшее 72-13) */
+.task79 .fff13 {
+    color: rgb(230, 79, 198);
+}
+
+/* Задание 80 (бывшее 72-14) */
+.task80 .fff14 p {
+    color: red;
+}
+
+/* Задание 81 (бывшее 72-15) */
+.task81 p.fff15 {
+    color: green;
+}
+
+/* Задание 82 (бывшее 72-16) */
+.task82 .fff16 .bbb16 {
+    color: crimson;
+}
+
+/* Задание 83 (бывшее 72-17) */
+.task83 .fff17 h2.bbb17 {
+    color: orangered;
+}
+
+/* Задание 84 (бывшее 73-1) */
+.task84 {
+    font-size: 20px;
+}
+
+.task84 {
+    font-size: 30px;
+}
+
+/* Этот приоритетнее */
+
+/* Задание 85 (бывшее 74-1) */
+.task85 {
+    font-size: 20px;
+    color: blue;
+}
+
+.task85 {
+    font-style: italic;
+    color: red;
+}
+
+/* Этот приоритетнее */
+
+/* Задание 86 (бывшее 77-1) */
+.task86 #elem1+li {
+    color: red;
+}
+
+/* Задание 87 (бывшее 77-2) */
+.task87 .elem2+li {
+    color: red;
+}
+
+/* Задание 88 (бывшее 78-1) */
+.task88 #elem78~li {
+    color: red;
+}
+
+/* Задание 89 (бывшее 79-1) */
+.task89 main * p {
+    color: red;
+}
+
+/* Задание 90 (бывшее 80-1) */
+.task90 [title] {
+    color: rgb(154, 1, 154);
+    font-family: Verdana;
+}
+
+/* Задание 91 (бывшее 80-2) */
+.task91 p[title1] {
+    color: blue;
+    font-style: italic;
+}
+
+/* Задание 92 (бывшее 80-3) */
+.task92 p[title3="hello"] {
+    color: brown;
+    font-weight: bold;
+}
+
+/* Задание 93 (бывшее 80-4) */
+.task93 a[href^="http://"] {
+    color: rgb(255, 54, 121);
+    text-align: center;
+}
+
+/* Задание 94 (бывшее 80-5) */
+.task94 a[href$=".html"] {
+    color: orangered;
+}
+
+/* Задание 95 (бывшее 80-6) */
+.task95 p[title4*="hello"] {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* Задание 96 (бывшее 80-7) */
+.task96 p[class^="top-"] {
+    color: rgb(6, 149, 56);
+    font-size: 20px;
+}
+
+/* Задание 97 (бывшее 82-1) */
+.task97 .task82:link {
+    color: blue;
+    text-decoration: none;
+}
+
+.task97 .task82:visited {
+    color: green;
+    text-decoration: none;
+}
+
+.task97 .task82:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.task97 .task82:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Задание 98 (бывшее 84-1) */
+.task98 .task84 {
+    color: blue;
+    text-decoration: none;
+}
+
+.task98 .task84:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Задание 99 (бывшее 85-1) */
+.task99 #task85 a {
+    color: red;
+}
+
+.task99 #task85 a:hover {
+    text-decoration: none;
+}
+
+/* Задание 100 (бывшее 86-1) */
+.task100 a.zzz1 {
+    color: red;
+}
+
+.task100 a.zzz1:hover {
+    text-decoration: none;
+}
+
+/* Задание 101 (бывшее 86-2) */
+.task101 #task86_2 a.zzz2 {
+    color: red;
+}
+
+.task101 #task86_2 a.zzz2:hover {
+    text-decoration: none;
+}
+
+/* Задание 102 (бывшее 86-3) */
+.task102 .task86_3 a.zzz3 {
+    color: red;
+}
+
+.task102 .task_86 a.zzz3:hover {
+    text-decoration: none;
+}
+
+/* Задание 103 (бывшее 87-1) */
+.task103 li:first-child {
+    color: rgb(255, 0, 0);
+}
+
+/* Задание 104 (бывшее 87-2) */
+.task104 li:last-child {
+    color: green;
+}
+
+/* Задание 105 (бывшее 87-3) */
+.task105 li:first-child {
+    color: rgb(255, 0, 0);
+}
+
+.task105 li:last-child {
+    color: green;
+}
+
+/* Задание 106 (бывшее 87-4) */
+.task106 li:nth-child(3) {
+    color: red;
+}
+
+/* Задание 107 (бывшее 87-5) */
+.task107 li:nth-child(odd) {
+    color: red;
+}
+
+.task107 li:nth-child(even) {
+    color: green;
+}
+
+/* Задание 108 (бывшее 87-6) */
+.task108 li:nth-child(3n) {
+    color: red;
+}
+
+/* Задание 109 (бывшее 87-7) */
+.task109 li:nth-last-child(2) {
+    color: red;
+}
+
+/* Задание 110 (бывшее 87-8) */
+.task110 li:only-child {
+    color: red;
+}
+
+.task110 ul {
+    margin-bottom: 10px;
+}
+
+/* Задание 111 (бывшее 87-9) */
+.task111 li {
+    border: 1px solid red;
+    width: 100px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.task111 li:empty {
+    border: 1px solid blue;
+}
+
+/* Задание 112 (бывшее 88-1) */
+.task112 p:first-of-type {
+    color: darkblue;
+}
+
+.task112 p:last-of-type {
+    color: purple;
+}
+
+/* Задание 113 (бывшее 88-2) */
+.task113 p:nth-last-of-type(even) {
+    color: rgb(160, 12, 162);
+}
+
+.task113 p:nth-of-type(odd) {
+    color: rgb(7, 192, 53);
+}
+
+/* Задание 114 (бывшее 88-3) */
+.task114 {
+    border: 1px dashed rgb(255, 0, 225);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.task114 h2:only-of-type {
+    color: red;
+}
+
+/* Задание 115 (бывшее 89-1) */
+.task115 li:not(li.elem89_1) {
+    color: orangered;
+}
+
+/* Задание 116 (бывшее 89-2) */
+.task116 li:not(:first-child) {
+    color: blue;
+}
+
+/* Задание 117 (бывшее 89-3) */
+.task117 li:not(:first-child, :last-child) {
+    color: red;
+}
