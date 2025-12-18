@@ -1,0 +1,354 @@
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-hover: #1f2733;
+    --primary: #1e88e5;
+    --primary-light: #42a5f5;
+    --primary-light1: #70b9f4;
+    --primary-dark: #1565c0;
+    --accent-blue: #58a6ff;
+    --accent-green: #3e3ed5;
+    --accent-cyan: #56d4dd;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --transition: 0.3s ease;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+header h1 {
+    color: var(--accent-blue);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+.task-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-green);
+    border-radius: var(--radius);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    position: relative;
+}
+
+.task-block:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--accent-blue);
+    box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+    background-color: var(--bg-hover);
+}
+
+.task-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #28a745;
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    font-weight: bold;
+    color: var(--primary-light1);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explanation {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+code {
+    background: #0b0f14;
+    border: 1px solid #1f2733;
+    border-radius: 6px;
+    color: #a5d6ff;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+
+
+/* Task 186 - Float с изображениями */
+#task186 {
+    width: 600px;
+    text-align: justify;
+    padding: 20px;
+    border: 2px solid #28a745;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#img186_1 {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #ffa8a8);
+    width: 150px;
+    height: 150px;
+}
+
+#img186_2 {
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #74b9ff, #a29bfe);
+    width: 150px;
+    height: 150px;
+}
+
+#task186 b {
+    color: #dc3545;
+}
+
+#task186 i {
+    color: #007bff;
+    font-style: italic;
+}
+
+/* Task 191 - Float с отступами */
+#task191 {
+    width: 700px;
+    padding: 25px;
+    margin: 20px auto;
+    border: 2px solid #6f42c1;
+    background: #f8f9fa;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+#img1 {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 2px solid #fd7e14;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #fd7e14, #ffa94d);
+    width: 120px;
+    height: 120px;
+}
+
+#img2 {
+    float: right;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #20c997;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #20c997, #63e6be);
+    width: 120px;
+    height: 120px;
+}
+
+/* Task 200 - Float с одним элементом */
+#parent200 {
+    width: 800px;
+    padding: 25px;
+    margin: 20px auto;
+    border: 2px solid #dc3545;
+    background: #f8f9fa;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+#child200 {
+    float: right;
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border: 2px solid #28a745;
+    background: linear-gradient(45deg, #51cf66, #94d82d);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Task 201 - Float с несколькими элементами */
+#parent201 {
+    width: 800px;
+    padding: 25px;
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    background: #f8f9fa;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+#child201_1,
+#child201_2 {
+    float: right;
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #6f42c1;
+    background: linear-gradient(45deg, #845ef7, #cc5de8);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Task 202 - Float с clearfix */
+#parent1,
+#parent2 {
+    padding: 25px;
+    border: 2px solid #343a40;
+    background: #f8f9fa;
+    margin: 20px auto;
+    width: 800px;
+    border-radius: 8px;
+}
+
+#parent1 {
+    border-color: #fd7e14;
+}
+
+#parent2 {
+    border-color: #20c997;
+}
+
+.child1 {
+    float: left;
+    background: linear-gradient(45deg, #ffa8a8, #ffc9c9);
+    border: 2px solid #dc3545;
+}
+
+.child2 {
+    float: right;
+    background: linear-gradient(45deg, #a5d8ff, #c0eb75);
+    border: 2px solid #28a745;
+}
+
+.child1,
+.child2 {
+    width: 120px;
+    height: 60px;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Демонстрационные изображения через псевдоэлементы */
+.demo-image::before {
+    content: "🖼️";
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Информационные блоки */
+.info-box {
+    background: #e7f5ff;
+    border-left: 4px solid #339af0;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}

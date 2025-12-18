@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style177-188.css>
+    <title>Задачи 174-185 - Позиционирование в CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Позиционирование</h1>
+        <p style="color: #8b949e; font-size: 1rem;">Выполнил студент группы И-3-24 <b>Сеит-Велиев Эмир Русланович</b>
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Task 174 -->
+        <div class="task-block">
+            <h2>Task 174 Абсолютное позиционирование элементов в CSS</h2>
+            <h3>Диагональное расположение</h3>
+            <div id="elem174_1">1</div>
+            <div id="elem174_2">2</div>
+            <div id="elem174_3">3</div>
+
+            <h3>Горизонтальное расположение</h3>
+            <div id="elem174_4">4</div>
+            <div id="elem174_5">5</div>
+            <div id="elem174_6">6</div>
+
+            <h3>Ступенчатое расположение</h3>
+            <div id="elem174_7">7</div>
+            <div id="elem174_8">8</div>
+            <div id="elem174_9">9</div>
+
+            <h3>Цветные блоки со смещением</h3>
+            <div id="elem174_10">10</div>
+            <div id="elem174_11">11</div>
+            <div id="elem174_12">12</div>
+        </div>
+
+        <!-- Task 175 -->
+        <div class="task-block">
+            <h2>Task 175 - Relative Positioning (Относительное позиционирование)</h2>
+
+            <div id="elem175_1">Block 1</div>
+            <div id="elem175_2">Block 2</div>
+            <div id="elem175_3">Block 3</div>
+
+            <div class="text-flow">
+                <strong>Особенность relative positioning:</strong> Элементы смещаются от своего нормального положения в
+                потоке, но пространство, которое они занимали, остается зарезервированным.
+            </div>
+        </div>
+
+        <!-- Task 176 -->
+        <div class="task-block">
+            <h2>Task 176 - Complex Absolute Positioning</h2>
+
+            <h3>№1 - Простое абсолютное позиционирование</h3>
+            <div id="parent1">
+                <div id="child1">Child</div>
+            </div>
+
+            <h3>№2 - Угловое позиционирование</h3>
+            <div id="parent2">
+                <div id="child2_1">Right Bottom</div>
+                <div id="child2_2">Left Top</div>
+            </div>
+
+            <h3>№3 - Вертикальное выравнивание</h3>
+            <div id="parent3">
+                <div id="child3_1"></div>
+                <div id="child3_2"></div>
+                <div id="child3_3"></div>
+            </div>
+
+            <h3>№4 - Круговая композиция</h3>
+            <div id="parent4">
+                <div id="child4_1"></div>
+                <div id="child4_2"></div>
+                <div id="child4_3"></div>
+                <div id="child4_4"></div>
+            </div>
+
+            <h3>№5 - Сложная круговая композиция с z-index</h3>
+            <div id="parent5">
+                <div id="child5_1"></div>
+                <div id="child5_2"></div>
+                <div id="child5_3"></div>
+                <div id="child5_4"></div>
+                <div id="child5_5"></div>
+            </div>
+        </div>
+
+        <!-- Task 179 -->
+        <div class="task-block">
+            <h2>Task 179 - Absolute Positioning with All Sides</h2>
+
+            <h3>№1 - Равномерные отступы</h3>
+            <div id="elem179">top: 100px, right: 100px, bottom: 100px, left: 100px</div>
+
+            <h3>№2 - Разные отступы</h3>
+            <div id="elem179_2">top: 100px, right: 200px, bottom: 50px, left: 10px</div>
+        </div>
+
+        <!-- Task 180 -->
+        <div class="task-block">
+            <h2>Task 180 - Relative Parent with Absolute Children</h2>
+
+            <div id="parent180">
+                <div id="child180_1">Left -50px</div>
+                <div id="child180_2">Right -50px</div>
+            </div>
+        </div>
+
+        <!-- Task 182 -->
+        <div class="task-block">
+            <h2>Task 182 - Fixed Positioning (Фиксированный заголовок)</h2>
+
+            <div id="elem182_2">
+                <p><strong>Фиксированная панель сверху</strong> остается на месте при прокрутке страницы.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin ultrices dictum. Nullam
+                    non diam vestibulum, interdum nibh quis, sollicitudin sem. Vivamus sit amet sagittis massa. Cras
+                    aliquet lacus at interdum blandit. Quisque quis tellus nunc. Cras at nisi laoreet, suscipit nibh
+                    quis, pellentesque diam.</p>
+
+                <p>Sed non ante vitae nunc lacinia tristique nec quis nisl. Integer a fringilla elit, vitae accumsan
+                    massa. Fusce ac tempor est. In ultricies mi sit amet nunc posuere eleifend. Cras vulputate
+                    hendrerit sodales.</p>
+
+                <p>Mauris et metus vitae lectus interdum auctor non sit amet odio. Morbi laoreet feugiat dapibus.
+                    Nulla ultricies sollicitudin est id blandit. Fusce justo nisl, tristique id fringilla ut,
+                    consectetur eu purus.</p>
+
+                <p>Donec accumsan ut sem in tincidunt. Sed nunc felis, fermentum eu lacinia dictum, dictum congue
+                    ipsum. Nam et enim eu massa dapibus pellentesque ac id lorem.</p>
+
+                <p>Ut at pellentesque turpis. Nulla condimentum accumsan lorem at semper. Nunc dapibus luctus nulla
+                    vehicula molestie. Aliquam consectetur nisi non elit blandit, sit amet viverra elit vestibulum.</p>
+            </div>
+        </div>
+
+        <!-- Task 184-185 -->
+        <div class="task-block">
+            <h2>Task 184-185 - Z-index (Управление слоями)</h2>
+
+            <div class="z-index-section">
+                <h3>Группа 1: Без z-index (стандартный порядок)</h3>
+                <div id="elem184_1">1 (no z-index)</div>
+                <div id="elem184_2">2 (z-index: 1)</div>
+                <div id="elem184_3">3 (no z-index)</div>
+
+                <h3>Группа 2: С z-index</h3>
+                <div id="elem184_4">4 (z-index: 2)</div>
+                <div id="elem184_5">5 (z-index: 1)</div>
+                <div id="elem184_6">6 (no z-index)</div>
+
+                <h3>Группа 3: Отрицательный z-index</h3>
+                <div id="elem184_7">7 (no z-index)</div>
+                <div id="elem184_8">8 (z-index: -1)</div>
+                <div id="elem184_9">9 (no z-index)</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>По учебнику Трепачёва Дмитрия © 2012-2025. <a href="https://code.mu/ru/markup/book/prime/">Вёрстка: Основной
+                учебник</a></p>
+    </footer>
+</body>
+
+</html>

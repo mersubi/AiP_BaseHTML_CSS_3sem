@@ -1,0 +1,540 @@
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-hover: #1f2733;
+    --primary: #1e88e5;
+    --primary-light: #42a5f5;
+    --primary-light1: #70b9f4;
+    --primary-dark: #1565c0;
+    --accent-blue: #58a6ff;
+    --accent-green: #3e3ed5;
+    --accent-cyan: #56d4dd;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --transition: 0.3s ease;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+header h1 {
+    color: var(--accent-blue);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+.task-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-green);
+    border-radius: var(--radius);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    position: relative;
+}
+
+.task-block:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--accent-blue);
+    box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+    background-color: var(--bg-hover);
+}
+
+.task-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    font-weight: bold;
+    color: var(--primary-light1);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explanation {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+code {
+    background: #0b0f14;
+    border: 1px solid #1f2733;
+    border-radius: 6px;
+    color: #a5d6ff;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* Задачи 125-153 - Блочная модель */
+#parent125_1 {
+    width: 300px;
+    border: 2px solid #007bff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#child125_1 {
+    height: 100px;
+    border: 2px solid #28a745;
+    margin: 25px;
+}
+
+#parent125_2 {
+    width: 400px;
+    border: 2px dashed #dc3545;
+}
+
+#child125_2 {
+    margin: 50px;
+    border: 2px solid #ffc107;
+    height: 200px;
+}
+
+#parent126 {
+    width: 350px;
+    border: 2px solid #6f42c1;
+}
+
+#child126 {
+    margin: 30px 60px 90px 120px;
+    height: 80px;
+    border: 2px dashed #fd7e14;
+    background: #fff3cd;
+}
+
+#parent127_1,
+#parent127_2 {
+    width: 300px;
+    border: 2px solid #20c997;
+    margin: 20px 0;
+}
+
+#child127_1 {
+    margin: 50px 100px;
+    height: 60px;
+    border: 2px solid #e83e8c;
+    background: #f8f9fa;
+}
+
+#child127_2 {
+    margin: 25px 75px;
+    height: 60px;
+    border: 2px solid #6610f2;
+    background: #e9ecef;
+}
+
+#parent128_1,
+#parent128_2 {
+    width: 400px;
+    border: 2px solid #fd7e14;
+    margin: 20px 0;
+}
+
+#child128_1 {
+    margin: 40px 80px 20px;
+    height: 70px;
+    border: 2px dashed #6f42c1;
+    background: #f8f9fa;
+}
+
+#child128_2 {
+    margin: 20px 60px 40px;
+    height: 70px;
+    border: 2px dashed #20c997;
+    background: #e9ecef;
+}
+
+.text-task {
+    text-align: justify;
+    border: 2px solid #007bff;
+    background: white;
+    margin: 15px 0;
+}
+
+#task129 {
+    width: 400px;
+    padding: 25px;
+}
+
+#task130 {
+    width: 350px;
+    padding: 30px 50px 70px 20px;
+}
+
+#task131_1 {
+    width: 450px;
+    padding: 20px 40px 60px 80px;
+}
+
+#task131_2 {
+    width: 450px;
+    padding: 50px 100px;
+}
+
+#task131_3 {
+    width: 450px;
+    padding: 30px 60px 90px;
+}
+
+/* Box-sizing задачи */
+.box-sizing-demo {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+#elem125_1,
+#elem125_2,
+#elem125_3,
+#elem125_4 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 10px;
+}
+
+#elem125_2 {
+    padding: 25px;
+    border: 10px solid #28a745;
+}
+
+#elem125_4 {
+    padding: 25px;
+    border: 10px solid #dc3545;
+    box-sizing: border-box;
+}
+
+/* Display свойства */
+#task147 p {
+    display: inline;
+    border: 2px solid #6f42c1;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background: #f8f9fa;
+}
+
+#task147 a {
+    display: block;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #28a745;
+    margin: 10px 0;
+    padding: 8px;
+    background: #d4edda;
+    text-decoration: none;
+    color: #155724;
+    border-radius: 4px;
+}
+
+#task147 a:hover {
+    background: #c3e6cb;
+}
+
+#task152 .elem {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #007bff;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#parent153 {
+    border: 3px solid #dc3545;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+#child_1,
+#child_2,
+#child_3 {
+    border: 2px solid #28a745;
+    margin: 15px auto;
+    background: #d4edda;
+}
+
+#child_1 {
+    width: 150px;
+    height: 80px;
+}
+
+#child_2 {
+    width: 250px;
+    height: 100px;
+}
+
+#child_3 {
+    width: 350px;
+    height: 120px;
+}
+
+/* Задачи 158-173 - Flexbox */
+.parent158,
+.parent159_1,
+.parent159_2 {
+    padding: 15px 0;
+    border: 3px solid #007bff;
+    margin: 15px 0;
+    background: #e3f2fd;
+}
+
+.parent158 a,
+.parent159_1 a,
+.parent159_2 a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: 2px solid #28a745;
+    background: #d4edda;
+    text-decoration: none;
+    color: #155724;
+    border-radius: 4px;
+}
+
+.parent161 {
+    padding: 20px 0;
+    border: 3px solid #6f42c1;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.child161 {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid #fd7e14;
+    margin: 8px;
+    background: #fff3cd;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Flex контейнеры */
+.flex-container {
+    margin: 20px auto;
+    border: 3px solid #dc3545;
+    background: #f8f9fa;
+    padding: 10px;
+}
+
+.flex-item {
+    width: 100px;
+    height: 60px;
+    border: 2px solid #007bff;
+    background: #e3f2fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.parent163 {
+    display: flex;
+    width: 800px;
+    height: 150px;
+}
+
+.parent164 {
+    display: flex;
+    width: 800px;
+}
+
+.parent165 {
+    display: flex;
+}
+
+.parent166 {
+    display: inline-flex;
+}
+
+.parent167 {
+    display: inline-flex;
+    padding: 25px;
+}
+
+.parent168 {
+    display: inline-flex;
+    margin: 30px;
+}
+
+/* Выравнивание Flex */
+.parent170 {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 150px;
+}
+
+.parent171 {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 150px;
+}
+
+.parent172 {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    height: 150px;
+}
+
+.parent173 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 150px;
+}
+
+/* Задачи 174-176 */
+.parent174 {
+    display: flex;
+    align-items: flex-start;
+    width: 800px;
+    height: 200px;
+    border: 3px solid #28a745;
+    background: #f8f9fa;
+    margin: 20px auto;
+}
+
+.child174 {
+    width: 120px;
+    border: 2px solid #007bff;
+    background: #e3f2fd;
+    padding: 10px;
+    margin: 5px;
+}
+
+.tall {
+    height: 120px;
+}
+
+.medium {
+    height: 80px;
+}
+
+.short {
+    height: 60px;
+}
+
+.parent175 {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    border: 3px solid #fd7e14;
+    background: #f8f9fa;
+    margin: 20px auto;
+}
+
+.child175 {
+    width: 120px;
+    border: 2px solid #6f42c1;
+    background: #e3f2fd;
+    padding: 10px;
+    margin: 5px;
+}
+
+.parent176 {
+    display: flex;
+    align-items: flex-end;
+    width: 800px;
+    height: 200px;
+    border: 3px solid #dc3545;
+    background: #f8f9fa;
+    margin: 20px auto;
+}
+
+.child176 {
+    width: 120px;
+    border: 2px solid #20c997;
+    background: #d4edda;
+    padding: 10px;
+    margin: 5px;
+}
