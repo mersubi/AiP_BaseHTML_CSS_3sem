@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - Полное руководство с примерами</title>
+    <style>
+        /* Общие стили */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-main: #0d1117;
+            --bg-card: #161b22;
+            --bg-hover: #1f2733;
+            --primary: #1e88e5;
+            --primary-light: #42a5f5;
+            --primary-light1: #70b9f4;
+            --primary-dark: #1565c0;
+            --accent-blue: #58a6ff;
+            --accent-green: #3e3ed5;
+            --accent-cyan: #56d4dd;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+            --shadow: rgba(0, 0, 0, 0.4);
+            --transition: 0.3s ease;
+            --radius: 10px;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0 20px 40px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        header h1 {
+            color: var(--accent-blue);
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+
+
+        .task-block {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-green);
+            border-radius: var(--radius);
+            padding: 20px 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px var(--shadow);
+            transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+            position: relative;
+        }
+
+        .task-block:hover {
+            transform: translateY(-3px);
+            border-left-color: var(--accent-blue);
+            box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+            background-color: var(--bg-hover);
+        }
+
+        .task-block p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #28a745;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: var(--primary-light);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-weight: bold;
+            color: var(--primary-light1);
+            margin-bottom: 12px;
+            font-size: 1rem;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .explanation {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 10px;
+            margin-top: 12px;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent-cyan);
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        td {
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+        }
+
+        code {
+            background: #0b0f14;
+            border: 1px solid #1f2733;
+            border-radius: 6px;
+            color: #a5d6ff;
+            padding: 2px 6px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+
+        .code-example {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            border-left: 3px solid #3498db;
+            overflow-x: auto;
+        }
+
+        /* Стили для меню */
+        .menu-horizontal {
+            display: flex;
+        }
+
+        .menu-horizontal a {
+            box-sizing: border-box;
+            margin-right: 10px;
+            padding: 10px 25px;
+            font: 16px Arial;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #16A177;
+            background-color: #16A177;
+        }
+
+        .menu-horizontal a:hover,
+        .menu-horizontal a.active {
+            color: #16A177;
+            background-color: white;
+        }
+
+        .menu-vertical {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .menu-vertical a {
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 10px 25px;
+            font: 16px Arial;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #16A177;
+            background-color: #16A177;
+        }
+
+        .menu-vertical a:hover,
+        .menu-vertical a.active {
+            color: #16A177;
+            background-color: white;
+        }
+
+        .menu-centered {
+            display: flex;
+            background-color: #16A177;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-centered a {
+            box-sizing: border-box;
+            padding: 15px 40px;
+            font: 16px Arial;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-centered a:hover,
+        .menu-centered a.active {
+            background-color: #16785C;
+        }
+
+        /* Стили для layout заданий */
+        .wrapper {
+            width: 890px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .price {
+            margin-top: 10px;
+            width: 500px;
+        }
+
+        .price td,
+        .price th {
+            border: 1px solid #000000;
+            text-align: center;
+        }
+
+        .price th {
+            background-color: #EBEBEB;
+        }
+
+        .picture {
+            width: 490px;
+            height: 375px;
+        }
+
+        header.nav-header {
+            background-color: #F8AA03;
+        }
+
+        #menu {
+            min-height: 50px;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+        }
+
+        #menu a:link,
+        #menu a:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        #menu a:hover,
+        #menu a.active {
+            text-decoration: underline;
+        }
+
+        aside.sidebar {
+            width: 360px;
+            background-color: #ffffff;
+            padding: 20px 20px 20px 10px;
+            box-sizing: border-box;
+        }
+
+        aside.sidebar>div {
+            margin: 20px 20px 0 0;
+        }
+
+        aside.sidebar h2 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        aside.sidebar p,
+        aside.sidebar li {
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        aside.sidebar ul {
+            list-style-type: none;
+        }
+
+        main.content {
+            text-align: justify;
+            width: 530px;
+            background-color: #ffffff;
+            padding: 20px 10px 20px 20px;
+            box-sizing: border-box;
+        }
+
+        main.content h1 {
+            font-size: 21px;
+        }
+
+        main.content h2 {
+            font-size: 19px;
+            margin-top: 20px;
+        }
+
+        main.content p {
+            margin: 10px 0;
+        }
+
+        footer.page-footer {
+            color: #ffffff;
+            display: flex;
+            min-height: 75px;
+            align-items: center;
+            justify-content: center;
+            background-color: #F8AA03;
+        }
+
+        nav a {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        /* Стили для layout конструкций */
+        .layout-wrapper {
+            width: 1200px;
+            margin: 30px auto;
+            border: 1px solid black;
+        }
+
+        .layout-header {
+            height: 250px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .layout-container {
+            display: flex;
+        }
+
+        .layout-content {
+            width: 860px;
+            height: 900px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .layout-sidebar {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .layout-sidebar.left {
+            margin-right: 40px;
+        }
+
+        .layout-sidebar.right {
+            margin-left: 40px;
+        }
+
+        .layout-footer {
+            height: 100px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* SVG иконки */
+        .svg-icon {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+
+        /* Специфические стили для заданий */
+        #wrapper241_1 {
+            width: 700px;
+            margin: 50px auto;
+            text-align: justify;
+            border: 1px solid black;
+        }
+
+        #menu241_1 {
+            display: flex;
+            background-color: #484848;
+            margin-bottom: 20px;
+        }
+
+        #menu241_1 a {
+            padding: 10px 25px;
+            text-decoration: none;
+            color: #fff;
+            font: bold 14px Arial;
+        }
+
+        #menu241_1 a:hover,
+        #menu241_1 a.active {
+            color: #484848;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Layout - Полное руководство с примерами</h1>
+
+    <div class="task-block">
+        <h2>Task #240 - Навигационные меню</h2>
+
+        <div class="task-block">
+            <h3>№1 - Горизонтальное меню</h3>
+            <div class="code-example">display: flex;</div>
+            <div class="menu-horizontal">
+                <a href="#">home</a>
+                <a href="#" class="active">blog</a>
+                <a href="#">photos</a>
+                <a href="#">about us</a>
+                <a href="#">contacts</a>
+            </div>
+        </div>
+
+        <div class="task-block">
+            <h3>№2 - Вертикальное меню</h3>
+            <div class="code-example">display: flex; flex-direction: column;</div>
+            <div class="menu-vertical">
+                <a href="#">home</a>
+                <a href="#" class="active">blog</a>
+                <a href="#">photos</a>
+                <a href="#">about us</a>
+                <a href="#">contacts</a>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <h3>№3 - Центрированное меню</h3>
+            <div class="code-example">display: flex; justify-content: center;</div>
+            <div class="menu-centered">
+                <a href="#">home</a>
+                <a href="#" class="active">blog</a>
+                <a href="#">photos</a>
+                <a href="#">about us</a>
+                <a href="#">contacts</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-block">
+        <h2>Task #241 - Макеты с навигацией</h2>
+
+        <div class="task-block">
+            <h3>№1 - Простой макет с навигацией</h3>
+            <div id="wrapper241_1">
+                <div id="menu241_1">
+                    <a href="#">home</a>
+                    <a href="#" class="active">blog</a>
+                    <a href="#">photos</a>
+                    <a href="#">about us</a>
+                    <a href="#">contacts</a>
+                </div>
+                <div id="task241_1">
+                    <h1>Proin tristique lorem</h1>
+                    <p>
+                        Lorem ipsum dolor <a href>sit amet</a>, consectetur adipiscing elit. Nulla pharetra risus erat,
+                        eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend.
+                        Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque.
+                        Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in
+                        adipiscing ligula placerat.
+                        Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat
+                        hendrerit gravida.
+                    </p>
+                    <p>
+                        Cras ut nunc metus. Nullam id faucibus ante. <a href>Proin tristique lorem</a> tristique dolor
+                        porttitor, eget adipiscing leo gravida.
+                        Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero.
+                        In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante.
+                        Phasellus at felis vitae est molestie ultricies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-block">
+        <h2>Task #242 - Многостраничный макет</h2>
+
+        <div id="task242">
+            <div id="header" class="wrapper242">
+                <div class="center">
+                    <h1>Любые виды ремонтных работ</h1>
+                    <p>Выезд специалиста, замер и смета работ бесплатно</p>
+                    <p>Бесплатный дизайн проект</p>
+                    <p>Гарантия 3 года</p>
+                </div>
+            </div>
+            <div id="services" class="wrapper242">
+                <div class="center">
+                    <h2>Наши услуги</h2>
+                    <ol>
+                        <li>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar
+                            rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio.</li>
+                        <li>Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio
+                            pharetra, sagittis enim sit amet, euismod leo.</li>
+                        <li>Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at
+                            ligula venenatis vestibulum.</li>
+                        <li>Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec
+                            tincidunt neque a dolor posuere egestas.</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="contacts" class="wrapper242">
+                <div class="center">
+                    <h2>Наши контакты</h2>
+                    <p>Телефоны: +375 29 335 29 38 МТС, +375 31 335 29 38 Velcom</p>
+                </div>
+            </div>
+            <div id="company" class="wrapper242">
+                <div class="center">
+                    <h2>Наша компания</h2>
+                    <p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum.
+                        Maecenas odio urna, porta sed lectus eget, fringilla posuere odio.</p>
+                    <p>Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula
+                        venenatis vestibulum.</p>
+                </div>
+            </div>
+            <div id="footer242" class="wrapper242">
+                <div class="center">
+                    Строительная компания "Рога и копыта" © Все права более чем защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-block">
+        <h2>Task #244 - Двухколоночные макеты</h2>
+
+        <div class="task-block">
+            <h3>№1 - Sidebar слева</h3>
+            <div class="layout-wrapper">
+                <div class="layout-header">header</div>
+                <div class="layout-container">
+                    <div class="layout-sidebar left">sidebar</div>
+                    <div class="layout-content">content</div>
+                </div>
+                <div class="layout-footer">footer</div>
+            </div>
+        </div>
+
+        <div class="task-block">
+            <h3>№2 - Sidebar справа</h3>
+            <div class="layout-wrapper">
+                <div class="layout-header">header</div>
+                <div class="layout-container">
+                    <div class="layout-content">content</div>
+                    <div class="layout-sidebar right">sidebar</div>
+                </div>
+                <div class="layout-footer">footer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-block">
+        <h2>Task #245 - Трехколоночные макеты</h2>
+
+        <div class="task-block">
+            <h3>№1 - Боковые колонки одинаковой ширины</h3>
+            <div class="layout-wrapper">
+                <div class="layout-header">header</div>
+                <div class="layout-container">
+                    <div class="layout-sidebar left">left sidebar</div>
+                    <div class="layout-content" style="width: 640px; height: 700px;">content</div>
+                    <div class="layout-sidebar right">right sidebar</div>
+                </div>
+                <div class="layout-footer">footer</div>
+            </div>
+        </div>
+
+        <div class="task-block">
+            <h3>№2 - Боковые колонки разной ширины</h3>
+            <div class="layout-wrapper" style="width: 1000px;">
+                <div class="layout-header">header</div>
+                <div class="layout-container">
+                    <div class="layout-sidebar left" style="width: 250px; margin-right: 15px;">left sidebar</div>
+                    <div class="layout-content" style="width: 520px; height: 700px;">content</div>
+                    <div class="layout-sidebar right" style="width: 200px; margin-left: 15px;">right sidebar</div>
+                </div>
+                <div class="layout-footer">footer</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

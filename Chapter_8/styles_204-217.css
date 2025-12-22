@@ -1,0 +1,559 @@
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-hover: #1f2733;
+    --primary: #1e88e5;
+    --primary-light: #42a5f5;
+    --primary-light1: #70b9f4;
+    --primary-dark: #1565c0;
+    --accent-blue: #58a6ff;
+    --accent-green: #3e3ed5;
+    --accent-cyan: #56d4dd;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --transition: 0.3s ease;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    background: linear-gradient(90deg, #0d1117, #0f1724, #0d1117);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+header h1 {
+    color: var(--accent-blue);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+.task-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-green);
+    border-radius: var(--radius);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
+    position: relative;
+}
+
+.task-block:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--accent-blue);
+    box-shadow: 0 6px 15px rgba(56, 139, 253, 0.3);
+    background-color: var(--bg-hover);
+}
+
+.task-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #28a745;
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    font-weight: bold;
+    color: var(--primary-light1);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explanation {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+code {
+    background: #0b0f14;
+    border: 1px solid #1f2733;
+    border-radius: 6px;
+    color: #a5d6ff;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+.info-box {
+    background: #e7f5ff;
+    border-left: 4px solid #339af0;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+/* Базовые стили для flex контейнеров и элементов */
+.flex-container {
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px solid #dc3545;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.child {
+    width: 120px;
+    height: 60px;
+    border: 2px solid #28a745;
+    background: linear-gradient(135deg, #51cf66, #94d82d);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+}
+
+/* Task 203-206 - Flex direction */
+.parent203 {
+    display: flex;
+    flex-direction: row;
+}
+
+.parent204 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.parent205 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent206 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Task 207 - Теория (ответы) */
+.answer-box {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+.answer-box b {
+    color: #856404;
+}
+
+/* Task 208 - Justify-content */
+.parent208_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.parent208_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.parent208_3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.parent208_4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.parent208_5 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+/* Task 209 - Комбинации justify-content и align-items */
+.parent209_1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.parent209_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.parent209_3 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.parent209_4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.parent209_5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.parent209_6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.parent209_7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Task 210 - Центрирование */
+.parent210_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent210_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent210_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.parent210_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parent210_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent210_6 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task 213 - Stretch */
+.child1 {
+    width: 120px;
+    border: 2px solid #007bff;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.child2 {
+    height: 40px;
+    border: 2px solid #fd7e14;
+    background: linear-gradient(135deg, #fd7e14, #ffa94d);
+}
+
+.child3 {
+    height: 40px;
+    border: 2px solid #e83e8c;
+    background: linear-gradient(135deg, #e83e8c, #f783ac);
+}
+
+.parent213_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.parent213_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.parent213_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* Task 214 - Комплексные комбинации */
+.parent214_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.parent214_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.parent214_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.parent214_4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.parent214_5 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.parent214_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.parent214_7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent214_8 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent214_9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/* Task 215 - Align-self */
+.child1-task215 {
+    width: 120px;
+    height: 60px;
+    border: 2px solid #20c997;
+    background: linear-gradient(135deg, #20c997, #63e6be);
+}
+
+.elem1 {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #ff6b6b, #ffa8a8);
+}
+
+.child2-task215 {
+    width: 100px;
+    border: 2px solid #6f42c1;
+    background: linear-gradient(135deg, #845ef7, #cc5de8);
+    height: 60px;
+}
+
+.elem2,
+.elem3 {
+    align-self: center;
+    background: linear-gradient(135deg, #ffa8a8, #ffc9c9);
+}
+
+.child3-task215 {
+    width: 100px;
+    height: 60px;
+    border: 2px solid #fd7e14;
+    background: linear-gradient(135deg, #fd7e14, #ffa94d);
+}
+
+.parent215_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent215_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.parent215_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Task 216 - Order */
+.parent216_1,
+.parent216_2 {
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px solid #ffc107;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.parent216_1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent216_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem216_1,
+.elem216_2 {
+    order: -1;
+    border: 3px solid #e83e8c !important;
+    background: linear-gradient(135deg, #e83e8c, #f783ac) !important;
+}
+
+/* Визуальные улучшения для демонстрации осей */
+.axis-demo {
+    position: relative;
+    overflow: hidden;
+}
+
+.axis-demo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #007bff, transparent);
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.axis-demo.vertical::before {
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(180deg, transparent, #dc3545, transparent);
+    transform: translateX(-50%);
+}

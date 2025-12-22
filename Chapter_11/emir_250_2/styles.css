@@ -1,0 +1,326 @@
+body,
+p,
+h1,
+h2,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1a0033;
+	/* Тёмно-фиолетовый фон, как ночь */
+	font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+	color: #f0e6ff;
+	/* Светло-фиолетовый текст */
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #2d004d;
+	/* Более светлый фиолетовый */
+	width: 1100px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+	/* Золотистое свечение */
+}
+
+.footer-center {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+header,
+footer {
+	background-color: #4a0080;
+	/* Глубокий фиолетовый */
+	border-bottom: 5px solid #ff6b00;
+	/* Оранжевая полоса */
+}
+
+nav {
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+nav a {
+	display: block;
+	padding: 0 20px;
+	font-size: 19px;
+	box-sizing: border-box;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav a:link,
+nav a:visited {
+	color: #ffd700;
+	/* Золотой цвет */
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+	background-color: #ff6b00;
+	/* Оранжевый */
+	line-height: 50px;
+	color: #1a0033;
+	/* Тёмный текст на оранжевом фоне */
+	border-radius: 5px;
+	text-shadow: 0 0 5px #ffd700;
+}
+
+aside {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #390066;
+	/* Фиолетовый фон для сайдбаров */
+	border-radius: 8px;
+	margin: 10px;
+}
+
+aside h2 {
+	font-size: 17px;
+	margin-bottom: 10px;
+	color: #ff6b00;
+	/* Оранжевые заголовки */
+	border-bottom: 2px dashed #ffd700;
+	/* Пунктирная золотая линия */
+	padding-bottom: 5px;
+}
+
+aside p,
+aside li {
+	font-size: 13px;
+	text-align: justify;
+	margin: 0 0 10px 0;
+	line-height: 1.5;
+}
+
+aside ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+aside li {
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+aside li:before {
+	content: "🐾";
+	position: absolute;
+	left: 0;
+	color: #ff6b00;
+}
+
+aside_2 {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #390066;
+	/* Фиолетовый фон для сайдбаров */
+	border-radius: 8px;
+	margin: 10px;
+}
+
+aside_2 h2 {
+	font-size: 17px;
+	margin-bottom: 10px;
+	color: #ff6b00;
+	/* Оранжевые заголовки */
+	border-bottom: 2px dashed #ffd700;
+	/* Пунктирная золотая линия */
+	padding-bottom: 5px;
+}
+
+aside_2 p,
+aside_2 li {
+	font-size: 13px;
+	text-align: justify;
+	margin: 0 0 10px 0;
+	line-height: 1.5;
+}
+
+aside_2 ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+aside_2 li {
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+aside_2 li:before {
+	content: "🐾";
+	position: absolute;
+	left: 0;
+	color: #ff6b00;
+}
+
+main {
+	min-height: 600px;
+	padding: 20px;
+	text-align: justify;
+	width: 450px;
+	box-sizing: border-box;
+	background-color: #2d004d;
+	border-left: 3px solid #ff6b00;
+	border-right: 3px solid #ff6b00;
+	border-radius: 8px;
+	margin: 10px 0;
+}
+
+main h1 {
+	font-size: 21px;
+	color: #ffd700;
+	/* Золотой заголовок */
+	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 0 #ff6b00;
+}
+
+main h2 {
+	font-size: 19px;
+	margin: 20px 0;
+	color: #00ccff;
+	/* Голубой для подзаголовков */
+	border-left: 4px solid #ff6b00;
+	padding-left: 10px;
+}
+
+main p {
+	font-size: 13px;
+	margin: 10px 0;
+	line-height: 1.6;
+}
+
+main img {
+	width: 400px;
+	height: 375px;
+	border: 5px solid #ff6b00;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+	display: block;
+	margin: 15px auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	text-align: center;
+	color: #ffd700;
+	min-height: 281px;
+	background-color: #4a0080;
+	border-top: 5px solid #ff6b00;
+	margin-top: 20px;
+}
+
+.footer-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.copyright {
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1a0033;
+	color: #ffd700;
+	font-weight: bold;
+	border-top: 2px solid #ff6b00;
+}
+
+aside img {
+	height: 168px;
+	width: 270px;
+	display: inline-block;
+	margin: 10px 0;
+	border: 3px solid #ff6b00;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+}
+
+.footer-wrp {
+	width: 250px;
+	background-color: #390066;
+	/* Фиолетовый как у сайдбаров */
+	color: #f0e6ff;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border-radius: 10px;
+	border: 2px solid #ffd700;
+	margin-bottom: 20px;
+}
+
+.footer-wrp hr {
+	width: 248px;
+	border: 1px dashed #ff6b00;
+	margin: 10px 0;
+}
+
+.footer-wrp h2 {
+	margin: 15px 0 10px 0;
+	color: #ffd700;
+	font-size: 16px;
+	text-align: center;
+}
+
+.footer-center p {
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+/* Специальные классы для персонажей */
+.scooby {
+	color: #ff6b00;
+	font-weight: bold;
+}
+
+.shaggy {
+	color: #00cc00;
+	font-weight: bold;
+}
+
+.velma {
+	color: #ff1493;
+	font-weight: bold;
+}
+
+.fred {
+	color: #00ccff;
+	font-weight: bold;
+}
+
+.daphne {
+	color: #ff00ff;
+	font-weight: bold;
+}
+
+/* Анимация для ховера на изображения */
+main img:hover,
+aside img:hover {
+	transform: scale(1.02);
+	transition: transform 0.3s ease;
+	box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
